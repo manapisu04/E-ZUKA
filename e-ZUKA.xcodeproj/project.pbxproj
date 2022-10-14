@@ -27,6 +27,9 @@
 		A28FE7C228EEF42100E887BD /* SearchLibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FE7C128EEF42100E887BD /* SearchLibView.swift */; };
 		A28FE7C428EEF42A00E887BD /* DartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FE7C328EEF42A00E887BD /* DartsView.swift */; };
 		A28FE7C628EEF43200E887BD /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FE7C528EEF43200E887BD /* SettingView.swift */; };
+		A2F6AD6A28F93E21004825C0 /* TalkListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6AD6928F93E21004825C0 /* TalkListCell.swift */; };
+		A2F6AD6D28F93E6D004825C0 /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6AD6C28F93E6D004825C0 /* ChatHelper.swift */; };
+		A2F6AD7028F93EAB004825C0 /* RealmMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6AD6F28F93EAB004825C0 /* RealmMessage.swift */; };
 		A2F9E48F28ED259900B32BCD /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9E48E28ED259900B32BCD /* Fetcher.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		A28FE7C128EEF42100E887BD /* SearchLibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLibView.swift; sourceTree = "<group>"; };
 		A28FE7C328EEF42A00E887BD /* DartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartsView.swift; sourceTree = "<group>"; };
 		A28FE7C528EEF43200E887BD /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		A2F6AD6928F93E21004825C0 /* TalkListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkListCell.swift; sourceTree = "<group>"; };
+		A2F6AD6C28F93E6D004825C0 /* ChatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
+		A2F6AD6F28F93EAB004825C0 /* RealmMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMessage.swift; sourceTree = "<group>"; };
 		A2F9E48E28ED259900B32BCD /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
 		D6CA4B819BB040708AA883FC /* Pods-e-ZUKA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-ZUKA.release.xcconfig"; path = "Target Support Files/Pods-e-ZUKA/Pods-e-ZUKA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +89,6 @@
 				6AEB12468117329D68626FB9 /* Pods-e-ZUKA.debug.xcconfig */,
 				D6CA4B819BB040708AA883FC /* Pods-e-ZUKA.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -198,6 +203,8 @@
 			children = (
 				A28FE7BF28EEF40B00E887BD /* TalkLibView.swift */,
 				A28BFFCB28F661E500B18C47 /* TalkViewModel.swift */,
+				A2F6AD6928F93E21004825C0 /* TalkListCell.swift */,
+				A2F6AD6B28F93E5B004825C0 /* Chat */,
 			);
 			path = Talk;
 			sourceTree = "<group>";
@@ -226,9 +233,26 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		A2F6AD6B28F93E5B004825C0 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A2F6AD6C28F93E6D004825C0 /* ChatHelper.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A2F6AD6E28F93E94004825C0 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				A2F6AD6F28F93EAB004825C0 /* RealmMessage.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		A2F9E48D28ED258100B32BCD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A2F6AD6E28F93E94004825C0 /* Realm */,
 				A2F9E48E28ED259900B32BCD /* Fetcher.swift */,
 				A28BFFD028F6644000B18C47 /* Entity */,
 				A28BFFCD28F6625700B18C47 /* Error */,
@@ -354,6 +378,7 @@
 				A211B20928EBD272003D2D5A /* BackgroundView.swift in Sources */,
 				A28BFFD928F673D400B18C47 /* Login.swift in Sources */,
 				A28FE7C628EEF43200E887BD /* SettingView.swift in Sources */,
+				A2F6AD6A28F93E21004825C0 /* TalkListCell.swift in Sources */,
 				A28BFFCC28F661E500B18C47 /* TalkViewModel.swift in Sources */,
 				A28BFFCF28F6626300B18C47 /* Error.swift in Sources */,
 				A28BFFD728F6739600B18C47 /* LoginViewModel.swift in Sources */,
@@ -361,7 +386,9 @@
 				A28BFFCA28F65D3900B18C47 /* ARView.swift in Sources */,
 				A211B1FC28EBD1E8003D2D5A /* ContentView.swift in Sources */,
 				A28BFFD228F6645700B18C47 /* User.swift in Sources */,
+				A2F6AD7028F93EAB004825C0 /* RealmMessage.swift in Sources */,
 				A211B20C28EBD6BE003D2D5A /* LoginView.swift in Sources */,
+				A2F6AD6D28F93E6D004825C0 /* ChatHelper.swift in Sources */,
 				A2F9E48F28ED259900B32BCD /* Fetcher.swift in Sources */,
 				A28FE7BA28EEF36F00E887BD /* TabMainView.swift in Sources */,
 				A28FE7C028EEF40B00E887BD /* TalkLibView.swift in Sources */,
