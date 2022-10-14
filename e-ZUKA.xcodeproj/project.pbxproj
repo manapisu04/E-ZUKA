@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15AADC2E77F7723CF9CB79D1 /* Pods_e_ZUKA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053901FBF0BD3617BC4FBAF9 /* Pods_e_ZUKA.framework */; };
+		A211B1FA28EBD1E8003D2D5A /* e_ZUKAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A211B1F928EBD1E8003D2D5A /* e_ZUKAApp.swift */; };
+		A211B1FC28EBD1E8003D2D5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A211B1FB28EBD1E8003D2D5A /* ContentView.swift */; };
+		A211B1FE28EBD1E9003D2D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A211B1FD28EBD1E9003D2D5A /* Assets.xcassets */; };
+		A211B20128EBD1E9003D2D5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A211B20028EBD1E9003D2D5A /* Preview Assets.xcassets */; };
+		A211B20928EBD272003D2D5A /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A211B20828EBD272003D2D5A /* BackgroundView.swift */; };
+		A211B20C28EBD6BE003D2D5A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A211B20B28EBD6BE003D2D5A /* LoginView.swift */; };
+		A211B20E28EBDA01003D2D5A /* 07LogoTypeGothic7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A211B20D28EBDA01003D2D5A /* 07LogoTypeGothic7.ttf */; };
+		A28BFFCA28F65D3900B18C47 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28BFFC928F65D3900B18C47 /* ARView.swift */; };
+		A28BFFCC28F661E500B18C47 /* TalkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28BFFCB28F661E500B18C47 /* TalkViewModel.swift */; };
+		A28BFFCF28F6626300B18C47 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28BFFCE28F6626300B18C47 /* Error.swift */; };
+		A28BFFD228F6645700B18C47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28BFFD128F6645700B18C47 /* User.swift */; };
+		A28BFFD528F665A500B18C47 /* WorkOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28BFFD428F665A500B18C47 /* WorkOnView.swift */; };
+		A28BFFD728F6739600B18C47 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28BFFD628F6739600B18C47 /* LoginViewModel.swift */; };
+		A28BFFD928F673D400B18C47 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28BFFD828F673D400B18C47 /* Login.swift */; };
+		A28FE7BA28EEF36F00E887BD /* TabMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FE7B928EEF36F00E887BD /* TabMainView.swift */; };
+		A28FE7C028EEF40B00E887BD /* TalkLibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FE7BF28EEF40B00E887BD /* TalkLibView.swift */; };
+		A28FE7C228EEF42100E887BD /* SearchLibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FE7C128EEF42100E887BD /* SearchLibView.swift */; };
+		A28FE7C428EEF42A00E887BD /* DartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FE7C328EEF42A00E887BD /* DartsView.swift */; };
+		A28FE7C628EEF43200E887BD /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28FE7C528EEF43200E887BD /* SettingView.swift */; };
+		A2F9E48F28ED259900B32BCD /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F9E48E28ED259900B32BCD /* Fetcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		053901FBF0BD3617BC4FBAF9 /* Pods_e_ZUKA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_e_ZUKA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AEB12468117329D68626FB9 /* Pods-e-ZUKA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-ZUKA.debug.xcconfig"; path = "Target Support Files/Pods-e-ZUKA/Pods-e-ZUKA.debug.xcconfig"; sourceTree = "<group>"; };
+		A211B1F628EBD1E8003D2D5A /* e-ZUKA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e-ZUKA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A211B1F928EBD1E8003D2D5A /* e_ZUKAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = e_ZUKAApp.swift; sourceTree = "<group>"; };
+		A211B1FB28EBD1E8003D2D5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A211B1FD28EBD1E9003D2D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A211B20028EBD1E9003D2D5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A211B20828EBD272003D2D5A /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		A211B20B28EBD6BE003D2D5A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A211B20D28EBDA01003D2D5A /* 07LogoTypeGothic7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 07LogoTypeGothic7.ttf; sourceTree = "<group>"; };
+		A28BFFC928F65D3900B18C47 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		A28BFFCB28F661E500B18C47 /* TalkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewModel.swift; sourceTree = "<group>"; };
+		A28BFFCE28F6626300B18C47 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		A28BFFD128F6645700B18C47 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A28BFFD428F665A500B18C47 /* WorkOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOnView.swift; sourceTree = "<group>"; };
+		A28BFFD628F6739600B18C47 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A28BFFD828F673D400B18C47 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A28FE7B928EEF36F00E887BD /* TabMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMainView.swift; sourceTree = "<group>"; };
+		A28FE7BF28EEF40B00E887BD /* TalkLibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkLibView.swift; sourceTree = "<group>"; };
+		A28FE7C128EEF42100E887BD /* SearchLibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLibView.swift; sourceTree = "<group>"; };
+		A28FE7C328EEF42A00E887BD /* DartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartsView.swift; sourceTree = "<group>"; };
+		A28FE7C528EEF43200E887BD /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		A2F9E48E28ED259900B32BCD /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		D6CA4B819BB040708AA883FC /* Pods-e-ZUKA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-ZUKA.release.xcconfig"; path = "Target Support Files/Pods-e-ZUKA/Pods-e-ZUKA.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A211B1F328EBD1E8003D2D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15AADC2E77F7723CF9CB79D1 /* Pods_e_ZUKA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14FEFE9BCEA200C7C0E3601D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				053901FBF0BD3617BC4FBAF9 /* Pods_e_ZUKA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F662481F3403BC3D9F527D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AEB12468117329D68626FB9 /* Pods-e-ZUKA.debug.xcconfig */,
+				D6CA4B819BB040708AA883FC /* Pods-e-ZUKA.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A211B1ED28EBD1E8003D2D5A = {
+			isa = PBXGroup;
+			children = (
+				A211B1F828EBD1E8003D2D5A /* e-ZUKA */,
+				A211B1F728EBD1E8003D2D5A /* Products */,
+				9F662481F3403BC3D9F527D2 /* Pods */,
+				14FEFE9BCEA200C7C0E3601D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A211B1F728EBD1E8003D2D5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A211B1F628EBD1E8003D2D5A /* e-ZUKA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A211B1F828EBD1E8003D2D5A /* e-ZUKA */ = {
+			isa = PBXGroup;
+			children = (
+				A211B20D28EBDA01003D2D5A /* 07LogoTypeGothic7.ttf */,
+				A211B1F928EBD1E8003D2D5A /* e_ZUKAApp.swift */,
+				A211B1FB28EBD1E8003D2D5A /* ContentView.swift */,
+				A28BFFD328F6657400B18C47 /* WorkOn */,
+				A211B20A28EBD6B0003D2D5A /* LoginView */,
+				A28FE7B828EEF34D00E887BD /* TabView */,
+				A211B20728EBD25A003D2D5A /* ViewSetting */,
+				A2F9E48D28ED258100B32BCD /* Model */,
+				A211B1FD28EBD1E9003D2D5A /* Assets.xcassets */,
+				A211B1FF28EBD1E9003D2D5A /* Preview Content */,
+			);
+			path = "e-ZUKA";
+			sourceTree = "<group>";
+		};
+		A211B1FF28EBD1E9003D2D5A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A211B20028EBD1E9003D2D5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A211B20728EBD25A003D2D5A /* ViewSetting */ = {
+			isa = PBXGroup;
+			children = (
+				A211B20828EBD272003D2D5A /* BackgroundView.swift */,
+			);
+			path = ViewSetting;
+			sourceTree = "<group>";
+		};
+		A211B20A28EBD6B0003D2D5A /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				A211B20B28EBD6BE003D2D5A /* LoginView.swift */,
+				A28BFFD628F6739600B18C47 /* LoginViewModel.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		A28BFFC828F65D2C00B18C47 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				A28BFFC928F65D3900B18C47 /* ARView.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		A28BFFCD28F6625700B18C47 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				A28BFFCE28F6626300B18C47 /* Error.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		A28BFFD028F6644000B18C47 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A28BFFD128F6645700B18C47 /* User.swift */,
+				A28BFFD828F673D400B18C47 /* Login.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A28BFFD328F6657400B18C47 /* WorkOn */ = {
+			isa = PBXGroup;
+			children = (
+				A28BFFD428F665A500B18C47 /* WorkOnView.swift */,
+			);
+			path = WorkOn;
+			sourceTree = "<group>";
+		};
+		A28FE7B828EEF34D00E887BD /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				A28FE7B928EEF36F00E887BD /* TabMainView.swift */,
+				A28BFFC828F65D2C00B18C47 /* AR */,
+				A28FE7BB28EEF3B100E887BD /* Talk */,
+				A28FE7BC28EEF3BD00E887BD /* Search */,
+				A28FE7BD28EEF3C600E887BD /* Darts */,
+				A28FE7BE28EEF3DF00E887BD /* Setting */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		A28FE7BB28EEF3B100E887BD /* Talk */ = {
+			isa = PBXGroup;
+			children = (
+				A28FE7BF28EEF40B00E887BD /* TalkLibView.swift */,
+				A28BFFCB28F661E500B18C47 /* TalkViewModel.swift */,
+			);
+			path = Talk;
+			sourceTree = "<group>";
+		};
+		A28FE7BC28EEF3BD00E887BD /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A28FE7C128EEF42100E887BD /* SearchLibView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A28FE7BD28EEF3C600E887BD /* Darts */ = {
+			isa = PBXGroup;
+			children = (
+				A28FE7C328EEF42A00E887BD /* DartsView.swift */,
+			);
+			path = Darts;
+			sourceTree = "<group>";
+		};
+		A28FE7BE28EEF3DF00E887BD /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				A28FE7C528EEF43200E887BD /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		A2F9E48D28ED258100B32BCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2F9E48E28ED259900B32BCD /* Fetcher.swift */,
+				A28BFFD028F6644000B18C47 /* Entity */,
+				A28BFFCD28F6625700B18C47 /* Error */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A211B1F528EBD1E8003D2D5A /* e-ZUKA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A211B20428EBD1E9003D2D5A /* Build configuration list for PBXNativeTarget "e-ZUKA" */;
+			buildPhases = (
+				401CE351C791F8EC76663461 /* [CP] Check Pods Manifest.lock */,
+				A211B1F228EBD1E8003D2D5A /* Sources */,
+				A211B1F328EBD1E8003D2D5A /* Frameworks */,
+				A211B1F428EBD1E8003D2D5A /* Resources */,
+				143351372534C98CDC4B0538 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "e-ZUKA";
+			productName = "e-ZUKA";
+			productReference = A211B1F628EBD1E8003D2D5A /* e-ZUKA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A211B1EE28EBD1E8003D2D5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A211B1F528EBD1E8003D2D5A = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A211B1F128EBD1E8003D2D5A /* Build configuration list for PBXProject "e-ZUKA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A211B1ED28EBD1E8003D2D5A;
+			productRefGroup = A211B1F728EBD1E8003D2D5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A211B1F528EBD1E8003D2D5A /* e-ZUKA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A211B1F428EBD1E8003D2D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A211B20E28EBDA01003D2D5A /* 07LogoTypeGothic7.ttf in Resources */,
+				A211B20128EBD1E9003D2D5A /* Preview Assets.xcassets in Resources */,
+				A211B1FE28EBD1E9003D2D5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		143351372534C98CDC4B0538 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-e-ZUKA/Pods-e-ZUKA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-e-ZUKA/Pods-e-ZUKA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-e-ZUKA/Pods-e-ZUKA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		401CE351C791F8EC76663461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-e-ZUKA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A211B1F228EBD1E8003D2D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A211B20928EBD272003D2D5A /* BackgroundView.swift in Sources */,
+				A28BFFD928F673D400B18C47 /* Login.swift in Sources */,
+				A28FE7C628EEF43200E887BD /* SettingView.swift in Sources */,
+				A28BFFCC28F661E500B18C47 /* TalkViewModel.swift in Sources */,
+				A28BFFCF28F6626300B18C47 /* Error.swift in Sources */,
+				A28BFFD728F6739600B18C47 /* LoginViewModel.swift in Sources */,
+				A28BFFD528F665A500B18C47 /* WorkOnView.swift in Sources */,
+				A28BFFCA28F65D3900B18C47 /* ARView.swift in Sources */,
+				A211B1FC28EBD1E8003D2D5A /* ContentView.swift in Sources */,
+				A28BFFD228F6645700B18C47 /* User.swift in Sources */,
+				A211B20C28EBD6BE003D2D5A /* LoginView.swift in Sources */,
+				A2F9E48F28ED259900B32BCD /* Fetcher.swift in Sources */,
+				A28FE7BA28EEF36F00E887BD /* TabMainView.swift in Sources */,
+				A28FE7C028EEF40B00E887BD /* TalkLibView.swift in Sources */,
+				A28FE7C228EEF42100E887BD /* SearchLibView.swift in Sources */,
+				A28FE7C428EEF42A00E887BD /* DartsView.swift in Sources */,
+				A211B1FA28EBD1E8003D2D5A /* e_ZUKAApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A211B20228EBD1E9003D2D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A211B20328EBD1E9003D2D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A211B20528EBD1E9003D2D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AEB12468117329D68626FB9 /* Pods-e-ZUKA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"e-ZUKA/Preview Content\"";
+				DEVELOPMENT_TEAM = 5NGGWS2Z6L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.jec.cm.shiraiyuuto.e-ZUKA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A211B20628EBD1E9003D2D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6CA4B819BB040708AA883FC /* Pods-e-ZUKA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"e-ZUKA/Preview Content\"";
+				DEVELOPMENT_TEAM = 5NGGWS2Z6L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.jec.cm.shiraiyuuto.e-ZUKA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A211B1F128EBD1E8003D2D5A /* Build configuration list for PBXProject "e-ZUKA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A211B20228EBD1E9003D2D5A /* Debug */,
+				A211B20328EBD1E9003D2D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A211B20428EBD1E9003D2D5A /* Build configuration list for PBXNativeTarget "e-ZUKA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A211B20528EBD1E9003D2D5A /* Debug */,
+				A211B20628EBD1E9003D2D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A211B1EE28EBD1E8003D2D5A /* Project object */;
+}

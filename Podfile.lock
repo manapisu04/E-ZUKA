@@ -1,0 +1,38 @@
+PODS:
+  - CropViewController (2.6.1)
+  - NWWebSocket (0.5.2)
+  - PusherSwift (10.1.1):
+    - NWWebSocket (~> 0.5.2)
+    - TweetNacl (~> 1.0.0)
+  - Realm (10.28.7):
+    - Realm/Headers (= 10.28.7)
+  - Realm/Headers (10.28.7)
+  - RealmSwift (10.28.7):
+    - Realm (= 10.28.7)
+  - TweetNacl (1.0.2)
+
+DEPENDENCIES:
+  - CropViewController
+  - PusherSwift (~> 10.1.0)
+  - RealmSwift (~> 10.0)
+
+SPEC REPOS:
+  trunk:
+    - CropViewController
+    - NWWebSocket
+    - PusherSwift
+    - Realm
+    - RealmSwift
+    - TweetNacl
+
+SPEC CHECKSUMS:
+  CropViewController: 58fb440f30dac788b129d2a1f24cffdcb102669c
+  NWWebSocket: 21f0c73639815da3272862c912275b26102aa80c
+  PusherSwift: 70a805a950ab49381e164c54ac19c3b9c1d288e3
+  Realm: d1d5ad078b9c1d22f99f7f7f2e692b548b518f24
+  RealmSwift: 7c38e0acca7d3df9cc60d79c073ef68245351d0e
+  TweetNacl: 3abf4d1d2082b0114e7a67410e300892448951e6
+
+PODFILE CHECKSUM: 7bf351a37c07ce47c27df7cbb65865ac5ad21718
+
+COCOAPODS: 1.11.3
