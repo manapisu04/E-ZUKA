@@ -12,7 +12,7 @@ struct TalkListCell: View {
     // アイコンのサイズ
     let iconSize = UIScreen.main.bounds.width / 6
     // 相手アイコン
-    let icon: String
+//    let icon: String
     // 相手のユーザネーム
     let friendName: String
     // 一覧で表示するメッセージ（最後のやりとり）
@@ -23,13 +23,13 @@ struct TalkListCell: View {
     
     var body: some View {
         HStack {
-            Image(uiImage: UIImage(data: Data(base64Encoded: icon)!) ?? UIImage(named: "defaultIcon")!)
-                .renderingMode(.original)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: iconSize, height: iconSize)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+//            Image(uiImage: UIImage(data: Data(base64Encoded: icon)!) ?? UIImage(named: "defaultIcon")!)
+//                .renderingMode(.original)
+//                .resizable()
+//                .aspectRatio(contentMode: .fill)
+//                .frame(width: iconSize, height: iconSize)
+//                .clipShape(Circle())
+//                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
             
             VStack(alignment: .leading) {
                 Text(friendName)
@@ -52,6 +52,6 @@ struct TalkListCell: View {
 
 struct TalkListCell_Previews: PreviewProvider {
     static var previews: some View {
-        TalkListCell(icon: "dddd", friendName: "ピヨ", lastMessage: "メッセージ", time: "12:00")
+        TalkListCell(friendName: "ピヨ", lastMessage: "メッセージ", time: "12:00")
     }
 }

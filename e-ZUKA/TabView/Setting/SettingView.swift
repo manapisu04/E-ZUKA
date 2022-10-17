@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingView: View {
     
     @State var isNotification: Bool = false
-    @State var userName: String = ""
+    @State var userName: String = UserData.shared.userName
  
     init () {
         UITableView.appearance().backgroundColor = .clear
@@ -24,7 +24,9 @@ struct SettingView: View {
                 List{
                     
                     Section {
-                        TextField("ニックネーム", text: $userName)
+                        TextField("ニックネーム", text: $userName) {
+                            // TODO: ここでニックネーム更新のAPIをリクエストする
+                        }
                     } header: {
                         Text("アカウント")
                     }

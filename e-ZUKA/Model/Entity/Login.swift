@@ -7,14 +7,15 @@
 
 import Foundation
 
-struct Login: Decodable {
+struct LoginResponce: Decodable {
     let status: Int
-    let session_token: String
     let id: Int
     let mail: String
+    let session_token: String
 }
 
-struct SignIn: Encodable {
+struct LoginRequest: Encodable {
     let mail: String
-    let pw_hash: String
+    let password: String
+    let user_name: String
 }

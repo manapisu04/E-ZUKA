@@ -19,27 +19,27 @@ struct TalkLibView: View {
                 WorkOnView(function: "チャット機能")
             } else {
                 
-            
-                    ZStack {
-                        List {
-                            ForEach(viewModel.displayChatList) { data in
-                                NavigationLink {
-
-                                    ChatView(target: data.id, from: UserData.shared.myId, targetName: data.name)
-                                } label: {
-                                    TalkListCell(icon: data.icon, friendName: data.name, lastMessage: data.message.message ?? "メッセージを送ってみよう！", time: data.message.time ?? "")
-                                        .frame(height: UIScreen.main.bounds.height / 9)
-                                }
+                
+                ZStack {
+                    List {
+                        ForEach(viewModel.displayChatList) { data in
+                            NavigationLink {
+                                
+                                ChatView(target: data.id, from: UserData.shared.myId, targetName: data.name)
+                            } label: {
+                                TalkListCell( friendName: data.name, lastMessage: data.message.message ?? "メッセージを送ってみよう！", time: data.message.time ?? "")
+                                    .frame(height: UIScreen.main.bounds.height / 9)
                             }
                         }
-                        .listStyle(PlainListStyle())
-                        
-                        if viewModel.isAccsessing {
-                            ProgressView()
-                        }
-                        
                     }
-                        
+                    .listStyle(PlainListStyle())
+                    
+                    if viewModel.isAccsessing {
+                        ProgressView()
+                    }
+                    
+                }
+                
                 
             }
             

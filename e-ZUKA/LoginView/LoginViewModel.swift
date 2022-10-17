@@ -32,12 +32,8 @@ class LoginViewModel: ObservableObject {
     
     @Published var errorMessage: String = " "
     
-    var login: [Login] = []
     
-    // LoginViewでアラートを表示させる用
-    var aleartBool: Bool = false
-    
-    // LoginViewでFirstSettingViewへ遷移する用
+    // LoginViewでTabViewへ遷移する用
     var roginBool: Bool = false
     
     // statusを変更。
@@ -45,16 +41,16 @@ class LoginViewModel: ObservableObject {
         status = .unexecuted
     }
     
-    func RoginRequest(mail: String, passWord: String) {
+    func RoginRequest(mail: String, passWord: String, name: String) {
         do{
-            try rogging(mail: mail, passWord: passWord)
+            try rogging(mail: mail, passWord: passWord, name: name)
         } catch {
             status = .failed(error)
         }
     }
     
-    func rogging(mail: String, passWord: String) throws {
-        guard let url = URL(string: "https://47lvomzysxitxfbqijpvpnz4je0nohrn.lambda-url.us-west-2.on.aws/") else {
+    func rogging(mail: String, passWord: String, name: String) throws {
+        guard let url = URL(string: "https://jeyj3f6w6s7bpmesczdfxgs5bu0llvox.lambda-url.us-west-2.on.aws/") else {
             print("urlが間違ってる")
             throw JECError.urlError
         }
@@ -70,8 +66,8 @@ class LoginViewModel: ObservableObject {
             request.httpMethod = "POST"
             
             let encoder = JSONEncoder()
-            let signIn = SignIn(mail: mail, pw_hash: hashString)
-            guard let jsonValue = try? encoder.encode(signIn) else {
+            let loginRequest = LoginRequest(mail: mail, password: hashString, user_name: name)
+            guard let jsonValue = try? encoder.encode(loginRequest) else {
                 print("エンコードしっぱい！")
                 return
             }
@@ -103,7 +99,7 @@ class LoginViewModel: ObservableObject {
             case .success(let data):
                 
                 do {
-                    let result = try JSONDecoder().decode(Login.self, from: data)
+                    let result = try JSONDecoder().decode(LoginResponce.self, from: data)
                     
                     await MainActor.run {
                         print("success")
@@ -114,9 +110,10 @@ class LoginViewModel: ObservableObject {
                             // 画面遷移用
                             roginBool = true
                             UserData.shared.isAccount = true
+                            // UserDefaultsにuserNameにuserNameを入れる
+                            UserData.shared.userName = name
+                            
                         } else {
-                            // アラート表示用
-                            aleartBool = true
                             print("resultStatus ≠ 200")
                         }
                         print("status = .success")

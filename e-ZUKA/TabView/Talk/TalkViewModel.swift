@@ -25,7 +25,7 @@ class TalkViewModel: ObservableObject {
     
     // チャット一覧を取得する関数
     func getChatList() throws {
-        guard let url = URL(string: "https://pnveco5lvd6v3u4xnozosfa3au0shrjx.lambda-url.us-west-2.on.aws/") else {
+        guard let url = URL(string: "https://qwy2e77rcm246whnc2j2y2zlhm0gnlry.lambda-url.us-west-2.on.aws/") else {
             print("getChatListでurlが間違っています")
             throw JECError.urlError
         }

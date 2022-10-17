@@ -104,11 +104,10 @@ struct LoginView: View {
                     } else if username == "" {
                         loginViewModel.errorMessage = "usernameを入力してください"
                     } else {
-                        try? loginViewModel.rogging(mail: loginEmail, passWord: password)
+                        try? loginViewModel.rogging(mail: loginEmail, passWord: password, name: username)
                     }
                     
                 }
-                
                 
                 
                 Spacer()

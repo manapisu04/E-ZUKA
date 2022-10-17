@@ -15,3 +15,6 @@ struct e_ZUKAApp: App {
         }
     }
 }
+
+
+let properties = Prop.shared.properties

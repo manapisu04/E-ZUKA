@@ -63,6 +63,15 @@ class UserData {
         }
     }
     
+    var userName: String {
+        get {
+            UserDefaults.standard.string(forKey: "userName") ?? ""
+        }
+        set (userName) {
+            UserDefaults.standard.set(userName, forKey: "userName")
+        }
+    }
+    
     static let shared: UserData = .init()
     private init() {
         print("よみこみよみこみ")

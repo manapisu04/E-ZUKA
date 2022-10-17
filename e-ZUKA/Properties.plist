@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PartialMessageListURL</key>
+	<string>https://bex6375kzsc5qmxmgb5luszvji0rrkcy.lambda-url.us-west-2.on.aws/</string>
+	<key>SendMessageURL</key>
+	<string>https://yyunsjxs7y4hd4bsb47kil3zk40kipqg.lambda-url.us-west-2.on.aws/</string>
+	<key>PusherEventName</key>
+	<string>my-event</string>
+	<key>PusherCruster</key>
+	<string>ap3</string>
+	<key>PusherAppKey</key>
+	<string>99bac0878611b4579902</string>
+	<key>PusherLambdaURL</key>
+	<string>https://hvja2dw6ihpaeqoemkldhsghdy0uyefo.lambda-url.us-west-2.on.aws/</string>
+</dict>
+</plist>
